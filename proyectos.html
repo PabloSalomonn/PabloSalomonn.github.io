@@ -51,10 +51,8 @@
     <div class="modal-content">
       <span class="close" onclick="closeModal('modal1')">&times;</span>
       <h2>Urban Routes – App de Car-Sharing</h2>
-      <p><strong>Descripción simple:</strong><br>
-      Urban Routes permite a los usuarios reservar taxis fácilmente. Probé automáticamente que todo el flujo de reserva funcionara correctamente: elegir ruta, tipo de servicio, registrar teléfono, pago y extras como mantas o helados.</p>
-      <p><strong>Detalles técnicos:</strong><br>
-      Automatización E2E con Python y Selenium WebDriver, usando Page Object Model (POM). Cobertura completa de escenarios críticos y registro de resultados mediante logs.</p>
+      <p><strong>Descripción simple:</strong> Urban Routes permite a los usuarios reservar taxis fácilmente. Probé automáticamente todo el flujo de reserva: ruta, tipo de servicio, teléfono, pago y extras.</p>
+      <p><strong>Detalles técnicos:</strong> Automatización E2E con Python y Selenium WebDriver, Page Object Model (POM). Cobertura completa de escenarios críticos y registro de resultados mediante logs.</p>
     </div>
   </div>
 
@@ -72,10 +70,8 @@
     <div class="modal-content">
       <span class="close" onclick="closeModal('modal2')">&times;</span>
       <h2>Urban Grocers – API Automation</h2>
-      <p><strong>Descripción simple:</strong><br>
-      Urban Grocers permite crear kits personalizados de productos. Automatizamos pruebas para asegurar que la API funcione correctamente y que los datos cumplan todas las reglas.</p>
-      <p><strong>Detalles técnicos:</strong><br>
-      Python con requests y pytest, arquitectura modular: separación de configuración, datos y lógica de envío. Validación de 9 casos de prueba con positive/negative assertions y autenticación mediante tokens.</p>
+      <p><strong>Descripción simple:</strong> Urban Grocers permite crear kits personalizados de productos. Automatizamos pruebas para asegurar que la API funcione correctamente y que los datos cumplan las reglas.</p>
+      <p><strong>Detalles técnicos:</strong> Python con requests y pytest, arquitectura modular: separación de configuración, datos y lógica de envío. Validación de 9 casos de prueba con positive/negative assertions y autenticación mediante tokens.</p>
     </div>
   </div>
 
@@ -93,15 +89,8 @@
     <div class="modal-content">
       <span class="close" onclick="closeModal('modal3')">&times;</span>
       <h2>Urban Scooter – Proyecto Final</h2>
-      <p><strong>Descripción simple:</strong><br>
-      Urban Scooter permite solicitar scooters compartidos. Probé la app móvil, la web y las APIs, incluyendo pedidos, notificaciones, cancelaciones y conectividad offline.</p>
-      <p><strong>Detalles técnicos:</strong><br>
-      Cobertura completa: UI, móvil y API.<br>
-      Diseño de pruebas: clases de equivalencia, valores límite y tablas de decisión.<br>
-      Validación de datos: SQL relacional.<br>
-      Herramientas: Postman, emuladores móviles, pruebas manuales UI.<br>
-      Técnicas: pruebas positivas/negativas, exploratorias y automatizadas.<br>
-      Resultados: bugs críticos identificados, documentación profesional, cobertura de escenarios complejos.</p>
+      <p><strong>Descripción simple:</strong> Urban Scooter permite solicitar scooters compartidos. Probé la app móvil, web y APIs: pedidos, notificaciones, cancelaciones y conectividad offline.</p>
+      <p><strong>Detalles técnicos:</strong> Cobertura completa: UI, móvil y API. Diseño de pruebas: clases de equivalencia, valores límite y tablas de decisión. Validación de datos SQL relacional. Herramientas: Postman, emuladores móviles, pruebas manuales UI. Técnicas: pruebas positivas/negativas, exploratorias y automatizadas. Resultados: bugs críticos identificados, documentación profesional, cobertura de escenarios complejos.</p>
       <p><strong>Áreas de mejora:</strong> Caché, automatización estratégica de API, bases de datos NoSQL y HTTP avanzado.</p>
     </div>
   </div>
@@ -123,7 +112,7 @@
       <p><strong>Título:</strong> Activación accidental del botón “Agregar al carrito” durante scroll</p>
       <p><strong>Tipo:</strong> Bug / UX Issue | <strong>Prioridad:</strong> Alta | <strong>Severidad:</strong> Alta</p>
       <h3>Descripción</h3>
-      <p>Durante la navegación, el botón “Agregar al carrito” se activa accidentalmente al hacer scroll, agregando productos sin intención. No hay opción rápida de deshacer, obligando al usuario a ir al carrito, interrumpiendo la experiencia.</p>
+      <p>Durante la navegación, el botón “Agregar al carrito” se activa accidentalmente al hacer scroll, agregando productos sin intención...</p>
       <h3>Precondiciones</h3>
       <ul>
         <li>Usuario autenticado</li>
@@ -152,47 +141,71 @@
         <li>Opción inmediata de “Deshacer” (snackbar)</li>
         <li>Usuario puede eliminar producto sin salir del listado</li>
       </ul>
-      <h3>Frecuencia</h3>
-      <p>Alta (ocurre de forma recurrente)</p>
-      <h3>Impacto</h3>
-      <ul>
-        <li>Deterioro de experiencia de usuario</li>
-        <li>Incremento de fricción</li>
-        <li>Posible abandono del flujo de compra</li>
-        <li>Percepción negativa de la app</li>
-      </ul>
-      <h3>Evidencia</h3>
-      <ul>
-        <li>Video: grabación mostrando taps accidentales en Android e iOS</li>
-        <li>Screenshots: ubicación del botón y superposición con scroll</li>
-      </ul>
-      <h3>Notas adicionales</h3>
-      <ul>
-        <li>Botón en zona expuesta al scroll</li>
-        <li>No hay separación clara entre navegación y acción crítica</li>
-        <li>No existe recuperación rápida ante error</li>
-      </ul>
-      <h3>Propuestas de mejora</h3>
-      <ul>
-        <li>Mover el botón fuera del área de scroll principal</li>
-        <li>Agregar confirmación o delay (hold/doble tap)</li>
-        <li>Implementar opción de “Deshacer” inmediata (snackbar)</li>
-        <li>Ignorar taps mientras el dedo se mueve durante scroll</li>
-      </ul>
     </div>
   </div>
 
+  <!-- Estilos y JS para todos los modales -->
+  <style>
+    .modal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.7);
+      z-index: 9999;
+      overflow-y: auto;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+    .modal.show { 
+      display: block; 
+      opacity: 1;
+    }
+    .modal-content {
+      background: #fff;
+      margin: 5% auto;
+      padding: 2em;
+      width: 90%;
+      max-width: 600px;
+      border-radius: 5px;
+      position: relative;
+    }
+    .close {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      font-size: 28px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .button {
+      cursor: pointer;
+      display: inline-block;
+      padding: 0.5em 1em;
+      margin-top: 10px;
+      background: #1d72b8;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      text-decoration: none;
+    }
+    .button:hover { background:#155d8b; }
+  </style>
+
+  <script>
+    function openModal(id){
+      document.getElementById(id).classList.add('show');
+    }
+    function closeModal(id){
+      document.getElementById(id).classList.remove('show');
+    }
+    window.onclick = function(e){
+      document.querySelectorAll('.modal').forEach(m => {
+        if(e.target == m){ m.classList.remove('show'); }
+      });
+    }
+  </script>
+
 </section>
-
-<!-- Script para abrir/cerrar modales -->
-<script>
-function openModal(id){ document.getElementById(id).style.display='block'; }
-function closeModal(id){ document.getElementById(id).style.display='none'; }
-window.onclick = function(e){ 
-  const modals = document.querySelectorAll('.modal'); 
-  modals.forEach(m => { if(e.target==m){ m.style.display='none'; } }); 
-}
-</script>
-
-</body>
-</html>
