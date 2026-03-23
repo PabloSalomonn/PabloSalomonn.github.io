@@ -7,11 +7,45 @@
   <link rel="stylesheet" href="assets/css/main.css" />
   <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
   <style>
-    /* Estilos para los modales */
-    .modal { display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.7); z-index:1000; }
-    .modal-content { background:#fff; margin:10% auto; padding:2em; width:80%; max-width:600px; border-radius:5px; position:relative; }
-    .close { position:absolute; top:10px; right:15px; font-size:28px; font-weight:bold; cursor:pointer; }
-    .button { cursor:pointer; display:inline-block; padding:0.5em 1em; margin-top:10px; background:#1d72b8; color:#fff; border:none; border-radius:4px; text-decoration:none; }
+    /* Modales */
+    .modal {
+      display: none;
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.7);
+      z-index: 9999;
+      overflow-y: auto;
+      padding: 20px 0;
+    }
+    .modal.show { display: block; }
+    .modal-content {
+      background: #fff;
+      margin: 5% auto;
+      padding: 2em;
+      width: 90%;
+      max-width: 600px;
+      border-radius: 5px;
+      position: relative;
+    }
+    .close {
+      position: absolute;
+      top: 10px; right: 15px;
+      font-size: 28px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .button {
+      cursor: pointer;
+      display: inline-block;
+      padding: 0.5em 1em;
+      margin-top: 10px;
+      background: #1d72b8;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      text-decoration: none;
+    }
     .button:hover { background:#155d8b; }
   </style>
 </head>
@@ -34,178 +68,112 @@
     </ul>
   </nav>
 
-  <!-- Sección de Proyectos -->
-<section id="projects" class="tiles">
+  <!-- Sección Proyectos -->
+  <section id="projects" class="tiles">
 
-  <!-- Proyecto 1: Urban Routes -->
-  <article>
-    <span class="image"><img src="images/proyecto1.jpg" alt="Urban Routes App" /></span>
-    <header class="major">
-      <h3>Urban Routes – App de Car-Sharing</h3>
-      <p>Pruebas automatizadas del flujo completo de reserva de taxi.</p>
-      <button class="button" onclick="openModal('modal1')">Ver más</button>
-    </header>
-  </article>
+    <!-- Proyecto 1 -->
+    <article>
+      <span class="image"><img src="images/proyecto1.jpg" alt="Urban Routes App" /></span>
+      <header class="major">
+        <h3>Urban Routes – App de Car-Sharing</h3>
+        <p>Pruebas automatizadas del flujo completo de reserva de taxi.</p>
+        <button class="button" onclick="openModal('modal1')">Ver más</button>
+      </header>
+    </article>
 
+    <!-- Proyecto 2 -->
+    <article>
+      <span class="image"><img src="images/proyecto2.jpg" alt="Urban Grocers API" /></span>
+      <header class="major">
+        <h3>Urban Grocers – API Automation</h3>
+        <p>Pruebas automatizadas de creación de kits en la API.</p>
+        <button class="button" onclick="openModal('modal2')">Ver más</button>
+      </header>
+    </article>
+
+    <!-- Proyecto 3 -->
+    <article>
+      <span class="image"><img src="images/proyecto3.jpg" alt="Urban Scooter Testing" /></span>
+      <header class="major">
+        <h3>Urban Scooter – Proyecto Final</h3>
+        <p>Testing de UI, móvil y API para la aplicación de scooters compartidos.</p>
+        <button class="button" onclick="openModal('modal3')">Ver más</button>
+      </header>
+    </article>
+
+    <!-- Proyecto 4 -->
+    <article>
+      <span class="image"><img src="images/proyecto4.jpg" alt="Mercado Libre QA UX" /></span>
+      <header class="major">
+        <h3>Mercado Libre – Botón “Agregar al carrito”</h3>
+        <p>Prueba de usabilidad para evitar agregados accidentales durante scroll.</p>
+        <button class="button" onclick="openModal('modal4')">Ver más</button>
+      </header>
+    </article>
+
+  </section>
+
+  <!-- Modales (fuera de la sección para evitar overflow issues) -->
   <div id="modal1" class="modal">
     <div class="modal-content">
       <span class="close" onclick="closeModal('modal1')">&times;</span>
       <h2>Urban Routes – App de Car-Sharing</h2>
-      <p><strong>Descripción simple:</strong> Urban Routes permite a los usuarios reservar taxis fácilmente. Probé automáticamente todo el flujo de reserva: ruta, tipo de servicio, teléfono, pago y extras.</p>
-      <p><strong>Detalles técnicos:</strong> Automatización E2E con Python y Selenium WebDriver, Page Object Model (POM). Cobertura completa de escenarios críticos y registro de resultados mediante logs.</p>
+      <p>Urban Routes permite a los usuarios reservar taxis fácilmente. Probé automáticamente todo el flujo de reserva: ruta, tipo de servicio, teléfono, pago y extras.</p>
+      <p>Automatización E2E con Python y Selenium WebDriver, Page Object Model (POM). Cobertura completa de escenarios críticos y logs.</p>
     </div>
   </div>
-
-  <!-- Proyecto 2: Urban Grocers -->
-  <article>
-    <span class="image"><img src="images/proyecto2.jpg" alt="Urban Grocers API" /></span>
-    <header class="major">
-      <h3>Urban Grocers – API Automation</h3>
-      <p>Pruebas automatizadas de creación de kits en la API.</p>
-      <button class="button" onclick="openModal('modal2')">Ver más</button>
-    </header>
-  </article>
 
   <div id="modal2" class="modal">
     <div class="modal-content">
       <span class="close" onclick="closeModal('modal2')">&times;</span>
       <h2>Urban Grocers – API Automation</h2>
-      <p><strong>Descripción simple:</strong> Urban Grocers permite crear kits personalizados de productos. Automatizamos pruebas para asegurar que la API funcione correctamente y que los datos cumplan las reglas.</p>
-      <p><strong>Detalles técnicos:</strong> Python con requests y pytest, arquitectura modular: separación de configuración, datos y lógica de envío. Validación de 9 casos de prueba con positive/negative assertions y autenticación mediante tokens.</p>
+      <p>Urban Grocers permite crear kits personalizados de productos. Automatizamos pruebas para asegurar que la API funcione correctamente.</p>
+      <p>Python con requests y pytest, arquitectura modular y validación de 9 casos de prueba.</p>
     </div>
   </div>
-
-  <!-- Proyecto 3: Urban Scooter -->
-  <article>
-    <span class="image"><img src="images/proyecto3.jpg" alt="Urban Scooter Testing" /></span>
-    <header class="major">
-      <h3>Urban Scooter – Proyecto Final</h3>
-      <p>Testing de UI, móvil y API para la aplicación de scooters compartidos.</p>
-      <button class="button" onclick="openModal('modal3')">Ver más</button>
-    </header>
-  </article>
 
   <div id="modal3" class="modal">
     <div class="modal-content">
       <span class="close" onclick="closeModal('modal3')">&times;</span>
       <h2>Urban Scooter – Proyecto Final</h2>
-      <p><strong>Descripción simple:</strong> Urban Scooter permite solicitar scooters compartidos. Probé la app móvil, web y APIs: pedidos, notificaciones, cancelaciones y conectividad offline.</p>
-      <p><strong>Detalles técnicos:</strong> Cobertura completa: UI, móvil y API. Diseño de pruebas: clases de equivalencia, valores límite y tablas de decisión. Validación de datos SQL relacional. Herramientas: Postman, emuladores móviles, pruebas manuales UI. Técnicas: pruebas positivas/negativas, exploratorias y automatizadas. Resultados: bugs críticos identificados, documentación profesional, cobertura de escenarios complejos.</p>
-      <p><strong>Áreas de mejora:</strong> Caché, automatización estratégica de API, bases de datos NoSQL y HTTP avanzado.</p>
+      <p>Probé la app móvil, web y APIs: pedidos, notificaciones, cancelaciones y conectividad offline.</p>
+      <p>Cobertura completa: UI, móvil y API. Diseño de pruebas: clases de equivalencia, valores límite y tablas de decisión. Validación de datos SQL relacional. Herramientas: Postman, emuladores, pruebas manuales UI.</p>
     </div>
   </div>
-
-  <!-- Proyecto 4: Mercado Libre UX QA -->
-  <article>
-    <span class="image"><img src="images/proyecto4.jpg" alt="Mercado Libre QA UX" /></span>
-    <header class="major">
-      <h3>Mercado Libre – Botón “Agregar al carrito”</h3>
-      <p>Prueba de usabilidad para evitar agregados accidentales durante scroll.</p>
-      <button class="button" onclick="openModal('modal4')">Ver más</button>
-    </header>
-  </article>
 
   <div id="modal4" class="modal">
     <div class="modal-content">
       <span class="close" onclick="closeModal('modal4')">&times;</span>
       <h2>Mercado Libre – Prueba UX QA</h2>
-      <p><strong>Título:</strong> Activación accidental del botón “Agregar al carrito” durante scroll</p>
-      <p><strong>Tipo:</strong> Bug / UX Issue | <strong>Prioridad:</strong> Alta | <strong>Severidad:</strong> Alta</p>
-      <h3>Descripción</h3>
-      <p>Durante la navegación, el botón “Agregar al carrito” se activa accidentalmente al hacer scroll, agregando productos sin intención...</p>
-      <h3>Precondiciones</h3>
-      <ul>
-        <li>Usuario autenticado</li>
-        <li>App instalada en dispositivo móvil</li>
-        <li>Conexión a internet activa</li>
-        <li>Pruebas realizadas en <strong>Android</strong> y <strong>iOS</strong></li>
-      </ul>
-      <h3>Pasos para reproducir</h3>
-      <ol>
-        <li>Abrir la app</li>
-        <li>Buscar cualquier producto</li>
-        <li>Ingresar a listado de resultados</li>
-        <li>Hacer scroll vertical (lento o rápido)</li>
-        <li>Observar interacción con los botones</li>
-      </ol>
-      <h3>Resultado actual</h3>
-      <ul>
-        <li>Productos se agregan sin intención</li>
-        <li>No hay confirmación clara ni opción de deshacer</li>
-        <li>Usuario debe ir al carrito para eliminar</li>
-      </ul>
-      <h3>Resultado esperado</h3>
-      <ul>
-        <li>Scroll no activa taps accidentalmente</li>
-        <li>Botón requiere interacción intencional clara</li>
-        <li>Opción inmediata de “Deshacer” (snackbar)</li>
-        <li>Usuario puede eliminar producto sin salir del listado</li>
-      </ul>
+      <p>Durante la navegación, el botón “Agregar al carrito” se activa accidentalmente al hacer scroll, agregando productos sin intención.</p>
+      <p>Se propone mover el botón fuera del área de scroll y agregar confirmación o “Deshacer” inmediata.</p>
     </div>
   </div>
 
-  <!-- Estilos y JS para todos los modales -->
-  <style>
-    .modal {
-      display: none;
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0,0,0,0.7);
-      z-index: 9999;
-      overflow-y: auto;
-      opacity: 0;
-      transition: opacity 0.3s ease;
-    }
-    .modal.show { 
-      display: block; 
-      opacity: 1;
-    }
-    .modal-content {
-      background: #fff;
-      margin: 5% auto;
-      padding: 2em;
-      width: 90%;
-      max-width: 600px;
-      border-radius: 5px;
-      position: relative;
-    }
-    .close {
-      position: absolute;
-      top: 10px;
-      right: 15px;
-      font-size: 28px;
-      font-weight: bold;
-      cursor: pointer;
-    }
-    .button {
-      cursor: pointer;
-      display: inline-block;
-      padding: 0.5em 1em;
-      margin-top: 10px;
-      background: #1d72b8;
-      color: #fff;
-      border: none;
-      border-radius: 4px;
-      text-decoration: none;
-    }
-    .button:hover { background:#155d8b; }
-  </style>
+  <!-- Footer -->
+  <footer id="footer">
+    <div class="inner">
+      <ul class="icons">
+        <li><a href="https://github.com/PabloSalomonn" target="_blank" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+        <li><a href="https://www.linkedin.com/in/pabloperezyaryes/" target="_blank" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+      </ul>
+      <ul class="copyright">
+        <li>&copy; Pablo Salomón</li>
+        <li>Design: HTML5 UP</li>
+      </ul>
+    </div>
+  </footer>
 
-  <script>
-    function openModal(id){
-      document.getElementById(id).classList.add('show');
-    }
-    function closeModal(id){
-      document.getElementById(id).classList.remove('show');
-    }
-    window.onclick = function(e){
-      document.querySelectorAll('.modal').forEach(m => {
-        if(e.target == m){ m.classList.remove('show'); }
-      });
-    }
-  </script>
+</div>
 
-</section>
+<!-- Scripts -->
+<script>
+function openModal(id) { document.getElementById(id).classList.add('show'); }
+function closeModal(id) { document.getElementById(id).classList.remove('show'); }
+window.onclick = e => {
+  document.querySelectorAll('.modal').forEach(m => { if(e.target == m) m.classList.remove('show'); });
+}
+</script>
+
+</body>
+</html>
