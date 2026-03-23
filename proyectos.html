@@ -38,14 +38,26 @@
   <section id="projects" class="tiles">
 
     <!-- Proyecto 1 -->
-    <article>
-      <span class="image"><img src="images/proyecto1.jpg" alt="" /></span>
-      <header class="major">
-        <h3>Proyecto 1: Login Testing</h3>
-        <p>Pruebas de funcionalidad del login, reportando bugs.</p>
-        <button class="button" onclick="openModal('modal1')">Ver más</button>
-      </header>
-    </article>
+<article>
+  <span class="image"><img src="images/proyecto1.jpg" alt="Urban Routes App" /></span>
+  <header class="major">
+    <h3>Urban Routes – App de Car-Sharing</h3>
+    <p>Pruebas automatizadas del flujo completo de reserva de taxi.</p>
+    <button class="button" onclick="openModal('modal1')">Ver más</button>
+  </header>
+</article>
+
+<!-- Modal Proyecto 1 -->
+<div id="modal1" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modal1')">&times;</span>
+    <h2>Urban Routes – App de Car-Sharing</h2>
+    <p><strong>Descripción simple:</strong><br>
+    Urban Routes permite a los usuarios reservar taxis fácilmente. Mi tarea fue probar automáticamente que todo el flujo de reserva funcionara correctamente: elegir ruta, tipo de servicio, registrar teléfono, pago y extras como mantas o helados.</p>
+    <p><strong>Detalles técnicos:</strong><br>
+    Automatización de pruebas de extremo a extremo (E2E) con Python y Selenium WebDriver, usando Page Object Model (POM) para mantener código limpio y escalable. Cobertura completa de escenarios críticos y registro de resultados mediante logs.</p>
+  </div>
+</div>
 
     <!-- Proyecto 2 -->
     <article>
