@@ -1,0 +1,150 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Proyectos QA | Pablo Salomón</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+  <style>
+    /* Estilos para los modales */
+    .modal { display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.7); z-index:1000; }
+    .modal-content { background:#fff; margin:10% auto; padding:2em; width:80%; max-width:600px; border-radius:5px; position:relative; }
+    .close { position:absolute; top:10px; right:15px; font-size:28px; font-weight:bold; cursor:pointer; }
+    .button { cursor:pointer; display:inline-block; padding:0.5em 1em; margin-top:10px; background:#1d72b8; color:#fff; border:none; border-radius:4px; text-decoration:none; }
+    .button:hover { background:#155d8b; }
+  </style>
+</head>
+<body class="is-preload">
+
+<div id="wrapper">
+
+  <!-- Header -->
+  <header id="header" class="alt">
+    <a href="index.html" class="logo"><strong>Pablo Salomón</strong> <span>QA Engineer</span></a>
+    <nav><a href="#menu">Menú</a></nav>
+  </header>
+
+  <!-- Menu -->
+  <nav id="menu">
+    <ul class="links">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="#projects">Proyectos</a></li>
+      <li><a href="index.html#contact">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <!-- Sección de Proyectos -->
+  <section id="projects" class="tiles">
+
+    <!-- Proyecto 1 -->
+    <article>
+      <span class="image"><img src="images/proyecto1.jpg" alt="" /></span>
+      <header class="major">
+        <h3>Proyecto 1: Login Testing</h3>
+        <p>Pruebas de funcionalidad del login, reportando bugs.</p>
+        <button class="button" onclick="openModal('modal1')">Ver más</button>
+      </header>
+    </article>
+
+    <!-- Proyecto 2 -->
+    <article>
+      <span class="image"><img src="images/proyecto2.jpg" alt="" /></span>
+      <header class="major">
+        <h3>Proyecto 2: Data Validation</h3>
+        <p>Validación de datos en formularios y bases de datos.</p>
+        <button class="button" onclick="openModal('modal2')">Ver más</button>
+      </header>
+    </article>
+
+    <!-- Proyecto 3 -->
+    <article>
+      <span class="image"><img src="images/proyecto3.jpg" alt="" /></span>
+      <header class="major">
+        <h3>Proyecto 3: UI Testing</h3>
+        <p>Pruebas de interfaz de usuario y elementos funcionales.</p>
+        <button class="button" onclick="openModal('modal3')">Ver más</button>
+      </header>
+    </article>
+
+    <!-- Proyecto 4 -->
+    <article>
+      <span class="image"><img src="images/proyecto4.jpg" alt="" /></span>
+      <header class="major">
+        <h3>Proyecto 4: Report Automation</h3>
+        <p>Automatización de reportes de pruebas.</p>
+        <button class="button" onclick="openModal('modal4')">Ver más</button>
+      </header>
+    </article>
+
+  </section>
+
+  <!-- Modales -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modal1')">&times;</span>
+      <h3>Proyecto 1: Login Testing</h3>
+      <p>Realicé pruebas funcionales de login, detectando fallos en validaciones, errores de interfaz y comportamiento ante datos inválidos. Documenté todos los bugs y sugerí mejoras.</p>
+    </div>
+  </div>
+
+  <div id="modal2" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modal2')">&times;</span>
+      <h3>Proyecto 2: Data Validation</h3>
+      <p>Validé formularios y bases de datos para asegurar consistencia de datos. Implementé casos de prueba que detectaron errores de cálculo y duplicados.</p>
+    </div>
+  </div>
+
+  <div id="modal3" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modal3')">&times;</span>
+      <h3>Proyecto 3: UI Testing</h3>
+      <p>Probé interfaces de usuario en distintas resoluciones y navegadores, asegurando que todos los elementos funcionen correctamente y sean accesibles.</p>
+    </div>
+  </div>
+
+  <div id="modal4" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modal4')">&times;</span>
+      <h3>Proyecto 4: Report Automation</h3>
+      <p>Automatización de reportes de prueba mediante scripts, optimizando el seguimiento de errores y la eficiencia en la generación de reportes.</p>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <div class="inner">
+      <ul class="icons">
+        <li><a href="https://github.com/PabloSalomonn" target="_blank" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+        <li><a href="https://www.linkedin.com/in/pabloperezyaryes/" target="_blank" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+      </ul>
+      <ul class="copyright">
+        <li>&copy; Pablo Salomón</li>
+        <li>Design: HTML5 UP</li>
+      </ul>
+    </div>
+  </footer>
+
+</div>
+
+<!-- Scripts para modales y template -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.scrolly.min.js"></script>
+<script src="assets/js/jquery.scrollex.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+
+<script>
+function openModal(id){ document.getElementById(id).style.display='block'; }
+function closeModal(id){ document.getElementById(id).style.display='none'; }
+window.onclick = function(e){ 
+  const modals = document.querySelectorAll('.modal'); 
+  modals.forEach(m => { if(e.target==m){ m.style.display='none'; } }); 
+}
+</script>
+
+</body>
+</html>
