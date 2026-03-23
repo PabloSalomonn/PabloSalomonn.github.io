@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-  <title>Proyectos QA | Pablo Salomón</title>
+  <title>Proyectos QA | Pablo Pérez Yaryes</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
   <link rel="stylesheet" href="assets/css/main.css" />
@@ -21,7 +21,7 @@
 
   <!-- Header -->
   <header id="header" class="alt">
-    <a href="index.html" class="logo"><strong>Pablo Salomón</strong> <span>QA Engineer</span></a>
+    <a href="index.html" class="logo"><strong>Pablo Pérez Yaryes</strong> <span>QA Engineer</span></a>
     <nav><a href="#menu">Menú</a></nav>
   </header>
 
@@ -35,120 +35,156 @@
   </nav>
 
   <!-- Sección de Proyectos -->
-  <section id="projects" class="tiles">
+<section id="projects" class="tiles">
 
-    <!-- Proyecto 1 -->
-<article>
-  <span class="image"><img src="images/proyecto1.jpg" alt="Urban Routes App" /></span>
-  <header class="major">
-    <h3>Urban Routes – App de Car-Sharing</h3>
-    <p>Pruebas automatizadas del flujo completo de reserva de taxi.</p>
-    <button class="button" onclick="openModal('modal1')">Ver más</button>
-  </header>
-</article>
+  <!-- Proyecto 1: Urban Routes -->
+  <article>
+    <span class="image"><img src="images/proyecto1.jpg" alt="Urban Routes App" /></span>
+    <header class="major">
+      <h3>Urban Routes – App de Car-Sharing</h3>
+      <p>Pruebas automatizadas del flujo completo de reserva de taxi.</p>
+      <button class="button" onclick="openModal('modal1')">Ver más</button>
+    </header>
+  </article>
 
-<!-- Modal Proyecto 1 -->
-<div id="modal1" class="modal">
-  <div class="modal-content">
-    <span class="close" onclick="closeModal('modal1')">&times;</span>
-    <h2>Urban Routes – App de Car-Sharing</h2>
-    <p><strong>Descripción simple:</strong><br>
-    Urban Routes permite a los usuarios reservar taxis fácilmente. Mi tarea fue probar automáticamente que todo el flujo de reserva funcionara correctamente: elegir ruta, tipo de servicio, registrar teléfono, pago y extras como mantas o helados.</p>
-    <p><strong>Detalles técnicos:</strong><br>
-    Automatización de pruebas de extremo a extremo (E2E) con Python y Selenium WebDriver, usando Page Object Model (POM) para mantener código limpio y escalable. Cobertura completa de escenarios críticos y registro de resultados mediante logs.</p>
-  </div>
-</div>
-
-    <!-- Proyecto 2 -->
-    <article>
-      <span class="image"><img src="images/proyecto2.jpg" alt="" /></span>
-      <header class="major">
-        <h3>Proyecto 2: Data Validation</h3>
-        <p>Validación de datos en formularios y bases de datos.</p>
-        <button class="button" onclick="openModal('modal2')">Ver más</button>
-      </header>
-    </article>
-
-    <!-- Proyecto 3 -->
-    <article>
-      <span class="image"><img src="images/proyecto3.jpg" alt="" /></span>
-      <header class="major">
-        <h3>Proyecto 3: UI Testing</h3>
-        <p>Pruebas de interfaz de usuario y elementos funcionales.</p>
-        <button class="button" onclick="openModal('modal3')">Ver más</button>
-      </header>
-    </article>
-
-    <!-- Proyecto 4 -->
-    <article>
-      <span class="image"><img src="images/proyecto4.jpg" alt="" /></span>
-      <header class="major">
-        <h3>Proyecto 4: Report Automation</h3>
-        <p>Automatización de reportes de pruebas.</p>
-        <button class="button" onclick="openModal('modal4')">Ver más</button>
-      </header>
-    </article>
-
-  </section>
-
-  <!-- Modales -->
   <div id="modal1" class="modal">
     <div class="modal-content">
       <span class="close" onclick="closeModal('modal1')">&times;</span>
-      <h3>Proyecto 1: Login Testing</h3>
-      <p>Realicé pruebas funcionales de login, detectando fallos en validaciones, errores de interfaz y comportamiento ante datos inválidos. Documenté todos los bugs y sugerí mejoras.</p>
+      <h2>Urban Routes – App de Car-Sharing</h2>
+      <p><strong>Descripción simple:</strong><br>
+      Urban Routes permite a los usuarios reservar taxis fácilmente. Probé automáticamente que todo el flujo de reserva funcionara correctamente: elegir ruta, tipo de servicio, registrar teléfono, pago y extras como mantas o helados.</p>
+      <p><strong>Detalles técnicos:</strong><br>
+      Automatización E2E con Python y Selenium WebDriver, usando Page Object Model (POM). Cobertura completa de escenarios críticos y registro de resultados mediante logs.</p>
     </div>
   </div>
+
+  <!-- Proyecto 2: Urban Grocers -->
+  <article>
+    <span class="image"><img src="images/proyecto2.jpg" alt="Urban Grocers API" /></span>
+    <header class="major">
+      <h3>Urban Grocers – API Automation</h3>
+      <p>Pruebas automatizadas de creación de kits en la API.</p>
+      <button class="button" onclick="openModal('modal2')">Ver más</button>
+    </header>
+  </article>
 
   <div id="modal2" class="modal">
     <div class="modal-content">
       <span class="close" onclick="closeModal('modal2')">&times;</span>
-      <h3>Proyecto 2: Data Validation</h3>
-      <p>Validé formularios y bases de datos para asegurar consistencia de datos. Implementé casos de prueba que detectaron errores de cálculo y duplicados.</p>
+      <h2>Urban Grocers – API Automation</h2>
+      <p><strong>Descripción simple:</strong><br>
+      Urban Grocers permite crear kits personalizados de productos. Automatizamos pruebas para asegurar que la API funcione correctamente y que los datos cumplan todas las reglas.</p>
+      <p><strong>Detalles técnicos:</strong><br>
+      Python con requests y pytest, arquitectura modular: separación de configuración, datos y lógica de envío. Validación de 9 casos de prueba con positive/negative assertions y autenticación mediante tokens.</p>
     </div>
   </div>
+
+  <!-- Proyecto 3: Urban Scooter -->
+  <article>
+    <span class="image"><img src="images/proyecto3.jpg" alt="Urban Scooter Testing" /></span>
+    <header class="major">
+      <h3>Urban Scooter – Proyecto Final</h3>
+      <p>Testing de UI, móvil y API para la aplicación de scooters compartidos.</p>
+      <button class="button" onclick="openModal('modal3')">Ver más</button>
+    </header>
+  </article>
 
   <div id="modal3" class="modal">
     <div class="modal-content">
       <span class="close" onclick="closeModal('modal3')">&times;</span>
-      <h3>Proyecto 3: UI Testing</h3>
-      <p>Probé interfaces de usuario en distintas resoluciones y navegadores, asegurando que todos los elementos funcionen correctamente y sean accesibles.</p>
+      <h2>Urban Scooter – Proyecto Final</h2>
+      <p><strong>Descripción simple:</strong><br>
+      Urban Scooter permite solicitar scooters compartidos. Probé la app móvil, la web y las APIs, incluyendo pedidos, notificaciones, cancelaciones y conectividad offline.</p>
+      <p><strong>Detalles técnicos:</strong><br>
+      Cobertura completa: UI, móvil y API.<br>
+      Diseño de pruebas: clases de equivalencia, valores límite y tablas de decisión.<br>
+      Validación de datos: SQL relacional.<br>
+      Herramientas: Postman, emuladores móviles, pruebas manuales UI.<br>
+      Técnicas: pruebas positivas/negativas, exploratorias y automatizadas.<br>
+      Resultados: bugs críticos identificados, documentación profesional, cobertura de escenarios complejos.</p>
+      <p><strong>Áreas de mejora:</strong> Caché, automatización estratégica de API, bases de datos NoSQL y HTTP avanzado.</p>
     </div>
   </div>
+
+  <!-- Proyecto 4: Mercado Libre UX QA -->
+  <article>
+    <span class="image"><img src="images/proyecto4.jpg" alt="Mercado Libre QA UX" /></span>
+    <header class="major">
+      <h3>Mercado Libre – Botón “Agregar al carrito”</h3>
+      <p>Prueba de usabilidad para evitar agregados accidentales durante scroll.</p>
+      <button class="button" onclick="openModal('modal4')">Ver más</button>
+    </header>
+  </article>
 
   <div id="modal4" class="modal">
     <div class="modal-content">
       <span class="close" onclick="closeModal('modal4')">&times;</span>
-      <h3>Proyecto 4: Report Automation</h3>
-      <p>Automatización de reportes de prueba mediante scripts, optimizando el seguimiento de errores y la eficiencia en la generación de reportes.</p>
+      <h2>Mercado Libre – Prueba UX QA</h2>
+      <p><strong>Título:</strong> Activación accidental del botón “Agregar al carrito” durante scroll</p>
+      <p><strong>Tipo:</strong> Bug / UX Issue | <strong>Prioridad:</strong> Alta | <strong>Severidad:</strong> Alta</p>
+      <h3>Descripción</h3>
+      <p>Durante la navegación, el botón “Agregar al carrito” se activa accidentalmente al hacer scroll, agregando productos sin intención. No hay opción rápida de deshacer, obligando al usuario a ir al carrito, interrumpiendo la experiencia.</p>
+      <h3>Precondiciones</h3>
+      <ul>
+        <li>Usuario autenticado</li>
+        <li>App instalada en dispositivo móvil</li>
+        <li>Conexión a internet activa</li>
+        <li>Pruebas realizadas en <strong>Android</strong> y <strong>iOS</strong></li>
+      </ul>
+      <h3>Pasos para reproducir</h3>
+      <ol>
+        <li>Abrir la app</li>
+        <li>Buscar cualquier producto</li>
+        <li>Ingresar a listado de resultados</li>
+        <li>Hacer scroll vertical (lento o rápido)</li>
+        <li>Observar interacción con los botones</li>
+      </ol>
+      <h3>Resultado actual</h3>
+      <ul>
+        <li>Productos se agregan sin intención</li>
+        <li>No hay confirmación clara ni opción de deshacer</li>
+        <li>Usuario debe ir al carrito para eliminar</li>
+      </ul>
+      <h3>Resultado esperado</h3>
+      <ul>
+        <li>Scroll no activa taps accidentalmente</li>
+        <li>Botón requiere interacción intencional clara</li>
+        <li>Opción inmediata de “Deshacer” (snackbar)</li>
+        <li>Usuario puede eliminar producto sin salir del listado</li>
+      </ul>
+      <h3>Frecuencia</h3>
+      <p>Alta (ocurre de forma recurrente)</p>
+      <h3>Impacto</h3>
+      <ul>
+        <li>Deterioro de experiencia de usuario</li>
+        <li>Incremento de fricción</li>
+        <li>Posible abandono del flujo de compra</li>
+        <li>Percepción negativa de la app</li>
+      </ul>
+      <h3>Evidencia</h3>
+      <ul>
+        <li>Video: grabación mostrando taps accidentales en Android e iOS</li>
+        <li>Screenshots: ubicación del botón y superposición con scroll</li>
+      </ul>
+      <h3>Notas adicionales</h3>
+      <ul>
+        <li>Botón en zona expuesta al scroll</li>
+        <li>No hay separación clara entre navegación y acción crítica</li>
+        <li>No existe recuperación rápida ante error</li>
+      </ul>
+      <h3>Propuestas de mejora</h3>
+      <ul>
+        <li>Mover el botón fuera del área de scroll principal</li>
+        <li>Agregar confirmación o delay (hold/doble tap)</li>
+        <li>Implementar opción de “Deshacer” inmediata (snackbar)</li>
+        <li>Ignorar taps mientras el dedo se mueve durante scroll</li>
+      </ul>
     </div>
   </div>
 
-  <!-- Footer -->
-  <footer id="footer">
-    <div class="inner">
-      <ul class="icons">
-        <li><a href="https://github.com/PabloSalomonn" target="_blank" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-        <li><a href="https://www.linkedin.com/in/pabloperezyaryes/" target="_blank" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-      </ul>
-      <ul class="copyright">
-        <li>&copy; Pablo Salomón</li>
-        <li>Design: HTML5 UP</li>
-      </ul>
-    </div>
-  </footer>
+</section>
 
-</div>
-
-<!-- Scripts para modales y template -->
-<script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/jquery.scrolly.min.js"></script>
-<script src="assets/js/jquery.scrollex.min.js"></script>
-<script src="assets/js/browser.min.js"></script>
-<script src="assets/js/breakpoints.min.js"></script>
-<script src="assets/js/util.js"></script>
-<script src="assets/js/main.js"></script>
-
+<!-- Script para abrir/cerrar modales -->
 <script>
 function openModal(id){ document.getElementById(id).style.display='block'; }
 function closeModal(id){ document.getElementById(id).style.display='none'; }
