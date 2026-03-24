@@ -6,35 +6,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
   <link rel="stylesheet" href="assets/css/main.css" />
   <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+  
   <!-- CSS para la barra de contacto superior -->
   <style>
     #top-contact {
-      position: fixed;
-      top: 0; left: 0;
-      width: 100%;
-      background: #222;
-      padding: 0.5rem 1rem;
-      z-index: 9999;
-      text-align: right;
-    }
+  position: fixed;        /* Fija la barra */
+  top: 1rem;              /* Un poco debajo del borde superior */
+  right: 1rem;            /* Pegado a la derecha */
+  z-index: 10000;         /* Siempre encima de header y demás elementos */
+  background: transparent; /* Fondo opcional, transparente para no tapar el header */
+  pointer-events: auto;    /* Asegura que se pueda hacer clic */
+}
 
-    #top-contact .icons {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      display: inline-flex;
-      gap: 1rem;
-    }
+#top-contact .icons {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 1rem;             /* Espacio entre íconos */
+}
 
-    #top-contact .icons li a {
-      color: #fff;
-      font-size: 1.2rem;
-      transition: color 0.3s;
-    }
+#top-contact .icons li a {
+  color: #222;            /* Color de los íconos */
+  font-size: 1.5rem;      /* Más visible */
+  transition: color 0.3s;
+}
 
-    #top-contact .icons li a:hover {
-      color: #1da1f2;
-    }
+#top-contact .icons li a:hover {
+  color: #1da1f2;         /* Color al pasar el mouse */
+}
 
     /* Espacio para que el contenido no quede tapado */
     body.is-preload #wrapper {
@@ -45,8 +45,7 @@
 
 <body class="is-preload">
 
-  <!-- Top Contact Bar -->
-
+<!-- Barra de contacto superior derecha -->
 <div id="top-contact">
   <ul class="icons">
     <li>
