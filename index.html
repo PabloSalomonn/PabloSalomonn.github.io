@@ -38,7 +38,10 @@
         <h1>Hola, soy Pablo</h1>
       </header>
       <div class="content">
-        <p>Soy QA Tester Junior, apasionado por la tecnología y motivado por aprender y contribuir en equipos de trabajo, asegurando la calidad y confiabilidad de productos digitales.</p>
+        <p>Soy Ingeniero Geomensor y QA Engineer en desarrollo, especializado en calidad de datos. 
+      Mi experiencia previa me enseñó a tener un pensamiento criterioso y enfoque analítico. 
+      Me motivan los desafíos, la posibilidad de trabajar de manera remota y seguir creciendo profesionalmente, 
+      combinando mi formación técnica con buenas prácticas de QA para garantizar la confiabilidad del software</p>
         <ul class="actions">
           <li><a href="#one" class="button next scrolly">Empecemos</a></li>
         </ul>
@@ -55,33 +58,27 @@
       <article>
         <span class="image"><img src="images/pic01.jpg" alt="" /></span>
         <header class="major">
-          <h3>Sobre mí</h3>
-          <p>Soy Ingeniero Geomensor y QA Engineer en desarrollo, especializado en calidad de datos. 
-      Mi experiencia previa me enseñó a tener un pensamiento criterioso y enfoque analítico. 
-      Me motivan los desafíos, la posibilidad de trabajar de manera remota y seguir creciendo profesionalmente, 
-      combinando mi formación técnica con buenas prácticas de QA para garantizar la confiabilidad del software.</p>
+          <h3>Proyecto Urban Routes – App de Car-Sharing</h3>
+          <p>Pruebas automatizadas del flujo completo de reserva de taxi.</p>
+          <button class="button" onclick="openModal('modal1')">Ver más</button>
         </header>
       </article>
 
       <article>
         <span class="image"><img src="images/pic02.jpg" alt="" /></span>
         <header class="major">
-          <h3><a href="proyectos.html" class="link">Proyectos QA</a></h3>
-          <p>Casos de prueba, bugs y análisis</p>
+          <h3>Proyectos Urban Grocers – API Automation</h3>
+          <p>Pruebas automatizadas de creación de kits en la API.</p>
+          <button class="button" onclick="openModal('modal2')">Ver más</button>
         </header>
       </article>
 
       <article>
         <span class="image"><img src="images/pic03.jpg" alt="" /></span>
         <header class="major">
-          <h3>Skills</h3>
-          <ul style="list-style-type: disc; margin-left: 1em;">
-      <li>Testing manual y fundamentos de automatización</li>
-      <li>Casos de prueba y documentación de calidad</li>
-      <li>Postman (API testing – nivel inicial)</li>
-      <li>SQL básico para validación de datos</li>
-      <li>Git y trabajo colaborativo</li>
-      <li>Metodologías ágiles (Scrum, Kanban)</li>
+          <h3>Proyecto Urban Scooter</h3>
+         <p>Testing de UI, móvil y API para la aplicación de scooters compartidos.</p>
+        <button class="button" onclick="openModal('modal3')">Ver más</button>
     </ul>
         </header>
       </article>
@@ -89,18 +86,9 @@
       <article>
         <span class="image"><img src="images/pic04.jpg" alt="" /></span>
         <header class="major">
-          <h3>Metodología</h3>
-          <ul style="list-style-type: disc; margin-left: 1em;">
-      <li>Testing funcional (validación de flujos críticos)</li>
-      <li>Automatización básica / End-to-End con Selenium</li>
-      <li>Pruebas cross-browser y responsive</li>
-      <li>Testing de APIs con Postman</li>
-      <li>Diseño y análisis de casos de prueba</li>
-      <li>Documentación y seguimiento de defectos en JIRA y Google Sheets</li>
-      <li>Trabajo bajo metodologías ágiles (Scrum/Kanban)</li>
-      <li>Revisión de diseño y UX (Figma)</li>
-      <li>Mejora continua de procesos de testing</li>
-    </ul>
+          <h3>Proyecto Mercado Libre – Botón “Agregar al carrito”</h3>
+          <p>Prueba de usabilidad para evitar agregados accidentales durante scroll.</p>
+        <button class="button" onclick="openModal('modal4')">Ver más</button>
         </header>
       </article>
 
@@ -124,8 +112,15 @@
       <article>
         <span class="image"><img src="images/pic06.jpg" alt="Contacto" /></span>
         <header class="major">
-          <h3><a href="#contact" class="link">Contacto</a></h3>
-          <p>Formas de comunicarte conmigo</p>
+          <h3>Skills</h3>
+           <ul style="list-style-type: disc; margin-left: 1em;">
+      <li>Testing manual y fundamentos de automatización</li>
+      <li>Casos de prueba y documentación de calidad</li>
+      <li>Postman (API testing – nivel inicial)</li>
+      <li>SQL básico para validación de datos</li>
+      <li>Git y trabajo colaborativo</li>
+      <li>Metodologías ágiles (Scrum, Kanban)</li>
+    </ul>
         </header>
       </article>
 
@@ -149,6 +144,42 @@
     </p>
       </div>
     </section>
+     <!-- Modales -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modal1')">&times;</span>
+      <h2>Urban Routes – App de Car-Sharing</h2>
+      <p>Urban Routes permite a los usuarios reservar taxis fácilmente. Probé automáticamente todo el flujo de reserva: ruta, tipo de servicio, teléfono, pago y extras.</p>
+      <p>Automatización E2E con Python y Selenium WebDriver, Page Object Model (POM). Cobertura completa de escenarios críticos y logs.</p>
+    </div>
+  </div>
+
+  <div id="modal2" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modal2')">&times;</span>
+      <h2>Urban Grocers – API Automation</h2>
+      <p>Urban Grocers permite crear kits personalizados de productos. Automatizamos pruebas para asegurar que la API funcione correctamente.</p>
+      <p>Python con requests y pytest, arquitectura modular y validación de 9 casos de prueba.</p>
+    </div>
+  </div>
+
+  <div id="modal3" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modal3')">&times;</span>
+      <h2>Urban Scooter – Proyecto Final</h2>
+      <p>Probé la app móvil, web y APIs: pedidos, notificaciones, cancelaciones y conectividad offline.</p>
+      <p>Cobertura completa: UI, móvil y API. Diseño de pruebas: clases de equivalencia, valores límite y tablas de decisión. Validación de datos SQL relacional. Herramientas: Postman, emuladores, pruebas manuales UI.</p>
+    </div>
+  </div>
+
+  <div id="modal4" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modal4')">&times;</span>
+      <h2>Mercado Libre – Prueba UX QA</h2>
+      <p>Durante la navegación, el botón “Agregar al carrito” se activa accidentalmente al hacer scroll, agregando productos sin intención.</p>
+      <p>Se propone mover el botón fuera del área de scroll y agregar confirmación o “Deshacer” inmediata.</p>
+    </div>
+  </div>
 
   </div>
 
