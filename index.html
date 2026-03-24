@@ -52,6 +52,7 @@
   <!-- Main -->
   <div id="main">
 
+   <style>
     .modal {
       display: none;
       position: fixed;
@@ -64,7 +65,12 @@
       opacity: 0;
       transition: opacity 0.3s ease;
     }
-    .modal.show { display: block; opacity: 1; }
+
+    .modal.show {
+      display: block;
+      opacity: 1;
+    }
+
     .modal-content {
       background: #fff;
       color: #000;
@@ -79,7 +85,10 @@
       transform: translateY(-20px);
       transition: transform 0.3s ease;
     }
-    .modal.show .modal-content { transform: translateY(0); }
+
+    .modal.show .modal-content {
+      transform: translateY(0);
+    }
 
     .close {
       position: absolute;
@@ -101,10 +110,18 @@
       text-decoration: none;
       transition: background 0.2s ease, transform 0.2s ease;
     }
+
     .button:hover {
       background:#155d8b;
       transform: scale(1.05);
     }
+  </style>
+</head>
+
+<body class="is-preload">
+
+<div id="wrapper">
+    
     <!-- Secciones -->
     <section id="one" class="tiles">
 
